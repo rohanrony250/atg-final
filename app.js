@@ -13,7 +13,7 @@ const page4 = document.getElementById('page4');
 const page5 = document.getElementById('page5');
 const page6 = document.getElementById('page6');
 const page7 = document.getElementById('page7');
-
+const svgring = document.getElementById('Opaque_Ring') 
 const svg=document.getElementById('svg-circle');
 
 const dotarray  = [dot1,dot2,dot3,dot4,dot5,dot6,dot7];
@@ -22,7 +22,7 @@ const dotarray  = [dot1,dot2,dot3,dot4,dot5,dot6,dot7];
 dot1.addEventListener("click", ()=>
 {   
     svg.style.backgroundColor='#3d5af1';
-
+    svgring.style.strokeDasharray="0,1000"
     page1.style.display='block';
     page2.style.display='none';
     page3.style.display='none';
@@ -35,33 +35,33 @@ dot1.addEventListener("click", ()=>
     for (var j= 6; j>0; j--)
     {
         dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
-        
     }
     
 })
 
 dot2.addEventListener("click", ()=>
 {   
-  svg.style.backgroundColor='#153e90';
-
-  page1.style.display='none';
-  page2.style.display='block';
-  page3.style.display='none';
-  page4.style.display='none';
-  page5.style.display='none';
-  page6.style.display='none';
-  page7.style.display='none';
-    
-    for (var i= 0; i<=1; i++)
-    {
-        dotarray[i].firstElementChild.firstElementChild.style.fill='rgb(0, 146, 255)';
+  
+    svg.style.backgroundColor='#153e90';
+    svgring.style.strokeDasharray="130,1000"
+    page1.style.display='none';
+    page2.style.display='block';
+    page3.style.display='none';
+    page4.style.display='none';
+    page5.style.display='none';
+    page6.style.display='none';
+    page7.style.display='none';
         
-    }
-    for (var j= 6; j>1; j--)
-    {
-        dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
-        
-    }
+        for (var i= 0; i<=1; i++)
+        {
+            dotarray[i].firstElementChild.firstElementChild.style.fill='rgb(0, 146, 255)';
+            
+        }
+        for (var j= 6; j>1; j--)
+        {
+            dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
+            
+        }
 
     
     
@@ -69,31 +69,32 @@ dot2.addEventListener("click", ()=>
 dot3.addEventListener("click", ()=>
 {   
     svg.style.backgroundColor = "#3e044d";
-  page1.style.display='none';
-  page2.style.display='none';
-  page3.style.display='block';
-  page4.style.display='none';
-  page5.style.display='none';
-  page6.style.display='none';
-  page7.style.display='none';
+    svgring.style.strokeDasharray="280,1000"
+    page1.style.display='none';
+    page2.style.display='none';
+    page3.style.display='block';
+    page4.style.display='none';
+    page5.style.display='none';
+    page6.style.display='none';
+    page7.style.display='none';
+        
+        for (var i= 0; i<=2; i++)
+        {
+            
+            dotarray[i].firstElementChild.firstElementChild.style.fill='rgb(0, 146, 255)';
+        
+        }
+        for (var j= 6; j>2; j--)
+        {
+            dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
+            
+        }
     
-    for (var i= 0; i<=2; i++)
-    {
-        
-        dotarray[i].firstElementChild.firstElementChild.style.fill='rgb(0, 146, 255)';
-      
-    }
-    for (var j= 6; j>2; j--)
-    {
-        dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
-        
-    }
-   
 })
 dot4.addEventListener("click", ()=>
 {   
     svg.style.backgroundColor='#2e7447';
-
+    svgring.style.strokeDasharray="420,1000"
     svg.style.backgroundColor=
     page1.style.display='none';
     page2.style.display='none';
@@ -119,7 +120,7 @@ dot5.addEventListener("click", ()=>
 {   
 
     svg.style.backgroundColor='#1f45fc';
-    
+    svgring.style.strokeDasharray="530,1000"
     page1.style.display='none';
     page2.style.display='none';
     page3.style.display='none';
@@ -143,28 +144,30 @@ dot5.addEventListener("click", ()=>
 dot6.addEventListener("click", ()=>
 {   
     svg.style.backgroundColor = "#1a2639";
+    svgring.style.strokeDasharray="680,1000"
     page1.style.display='none';
-  page2.style.display='none';
-  page3.style.display='none';
-  page4.style.display='none';
-  page5.style.display='none';
-  page6.style.display='block';
-  page7.style.display='none';
-    for (var i= 0; i<=5; i++)
-    {
+    page2.style.display='none';
+    page3.style.display='none';
+    page4.style.display='none';
+    page5.style.display='none';
+    page6.style.display='block';
+    page7.style.display='none';
+        for (var i= 0; i<=5; i++)
+        {
+            
+            dotarray[i].firstElementChild.firstElementChild.style.fill='rgb(0, 146, 255)';
+        }
+        for (var j= 6; j>5; j--)
+        {
+            dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
+            
+        }
         
-        dotarray[i].firstElementChild.firstElementChild.style.fill='rgb(0, 146, 255)';
-    }
-    for (var j= 6; j>5; j--)
-    {
-        dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
-        
-    }
-    
 })
 dot7.addEventListener("click", ()=>
 {   
     svg.style.backgroundColor="#00003f"
+    svgring.style.strokeDasharray="820,1000"
     page1.style.display='none';
     page2.style.display='none';
     page3.style.display='none';

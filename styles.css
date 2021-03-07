@@ -49,6 +49,14 @@
   z-index: 2;
   color: white;
 }
+
+#page-three-svg-content {
+  position: absolute;
+  top: 9rem;
+  left: 20rem;
+  z-index: 2;
+  color: white;
+}
 #svg-content1 {
   position: absolute;
   top: 11rem;
