@@ -18,6 +18,11 @@ const svg=document.getElementById('svg-circle');
 
 const dotarray  = [dot1,dot2,dot3,dot4,dot5,dot6,dot7];
 
+    gsap.from("#svg-main-title", {duration: 1, y:200, ease:"elastic.out(2,0.8)"})
+    gsap.from("#svg-title", {duration: 1, y:-200, ease:"elastic.out(2,0.8)"})
+    gsap.from("#svg-footer-title", {duration: 1, y:-50, skewY: 10, ease:"elastic.out(2,0.8)"})
+    gsap.from("#img1", {duration: 1, y:"-100%"})
+    gsap.from("#img2", {duration: 1, y:"100%"})
 
 dot1.addEventListener("click", ()=>
 {   
@@ -36,6 +41,13 @@ dot1.addEventListener("click", ()=>
     {
         dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
     }
+
+    // gsap.from('#svg-content', {duration: 1, y: "100%"})
+    gsap.from("#svg-main-title", {duration: 1, y:200, ease:"elastic.out(2,0.8)"})
+    gsap.from("#svg-title", {duration: 1, y:-200, ease:"elastic.out(2,0.8)"})
+    gsap.from("#svg-footer-title", {duration: 1, y:-50, skewY: 10, ease:"elastic.out(2,0.8)"})
+    gsap.from("#img1", {duration: 1, y:"-100%"})
+    gsap.from("#img2", {duration: 1, y:"100%"})
     
 })
 
@@ -63,7 +75,10 @@ dot2.addEventListener("click", ()=>
             
         }
 
-    
+        gsap.from("#svg-main-title", {duration: 1, y:-37, ease:"elastic.out(1,0.8)"})
+        gsap.from("#svg-title", {duration: 1, y:37, ease:"elastic.out(2,0.8)"})
+        gsap.from("#svg-footer-title", {duration: 1, y:-50, skewY: 10, ease:"elastic.out(1,0.8)"})
+        gsap.from("#right-section", {duration:0.85, y: "100%"})
     
 })
 dot3.addEventListener("click", ()=>
@@ -89,7 +104,10 @@ dot3.addEventListener("click", ()=>
             dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
             
         }
-    
+        gsap.from("#page-three-firstpic", {duration: 1, y:"100%"})
+        gsap.from("#page-three-secondpic", {duration: 1, y:"-100%"})
+        gsap.from("#page-three-svg-title", {duration: 1, y:"-50%"})
+        gsap.from("#svg-footer-title", {duration: 1, y:"100%"})
 })
 dot4.addEventListener("click", ()=>
 {   
@@ -189,3 +207,4 @@ dot7.addEventListener("click", ()=>
 })
 
 
+// gsap.from('#svg-content', {duration: 1, rotation: 360})

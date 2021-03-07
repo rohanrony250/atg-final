@@ -42,6 +42,16 @@
   z-index: 1;
 }
 
+/* #svg-main-title
+{
+  z-index: 8;
+}
+
+#svg-title
+{
+  z-index: 1;
+} */
+
 #svg-content {
   position: absolute;
   top: 11rem;
@@ -50,12 +60,10 @@
   color: white;
 }
 
-#page-three-svg-content {
+.page-three-svg-content {
   position: absolute;
-  top: 9rem;
-  left: 20rem;
-  z-index: 2;
-  color: white;
+  top: 9rem !important;
+  
 }
 #svg-content1 {
   position: absolute;
