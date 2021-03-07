@@ -23,6 +23,8 @@ const dotarray  = [dot1,dot2,dot3,dot4,dot5,dot6,dot7];
     gsap.from("#svg-footer-title", {duration: 1, y:-50, skewY: 10, ease:"elastic.out(2,0.8)"})
     gsap.from("#img1", {duration: 1, y:"-100%"})
     gsap.from("#img2", {duration: 1, y:"100%"})
+    gsap.from("#left-content-title", {duration: 1, y:30, ease:"power3.out"})
+    gsap.from("#left-content-subtitle", {duration: 1, y:-30, ease:"power3.out"})
 
 dot1.addEventListener("click", ()=>
 {   
@@ -48,6 +50,8 @@ dot1.addEventListener("click", ()=>
     gsap.from("#svg-footer-title", {duration: 1, y:-50, skewY: 10, ease:"elastic.out(2,0.8)"})
     gsap.from("#img1", {duration: 1, y:"-100%"})
     gsap.from("#img2", {duration: 1, y:"100%"})
+    gsap.from("#left-content-title", {duration: 1, y:30, ease:"power3.out"})
+    gsap.from("#left-content-subtitle", {duration: 1, y:-30, ease:"power3.out"})
     
 })
 
@@ -75,10 +79,12 @@ dot2.addEventListener("click", ()=>
             
         }
 
-        gsap.from("#svg-main-title", {duration: 1, y:-37, ease:"elastic.out(1,0.8)"})
-        gsap.from("#svg-title", {duration: 1, y:37, ease:"elastic.out(2,0.8)"})
-        gsap.from("#svg-footer-title", {duration: 1, y:-50, skewY: 10, ease:"elastic.out(1,0.8)"})
+        gsap.from("#svg-main-title", {duration: 1, y:-30, ease:"elastic.out(1,0.8)"})
+        gsap.from("#svg-title", {duration: 1, y:30, ease:"power3.out"})
+        gsap.from("#svg-footer-title", {duration: 1, y:-30, ease:"power3.out"})
         gsap.from("#right-section", {duration:0.85, y: "100%"})
+        gsap.from("#left-content-title", {duration: 1, y:30, ease:"power3.out"})
+        gsap.from("#left-content-subtitle", {duration: 1, y:-30, ease:"power3.out"})
     
 })
 dot3.addEventListener("click", ()=>
@@ -106,8 +112,10 @@ dot3.addEventListener("click", ()=>
         }
         gsap.from("#page-three-firstpic", {duration: 1, y:"100%"})
         gsap.from("#page-three-secondpic", {duration: 1, y:"-100%"})
-        gsap.from("#page-three-svg-title", {duration: 1, y:"-50%"})
-        gsap.from("#svg-footer-title", {duration: 1, y:"100%"})
+        gsap.from("#page-title", {duration: 1, y:30, ease:"power3.out"})
+        gsap.from("#svg-footer-title", {duration: 1, y:-30, ease:"power3.out"})
+        gsap.from("#left-content-title", {duration: 1, y:30, ease:"power3.out"})
+        gsap.from("#left-content-subtitle", {duration: 1, y:-30, ease:"power3.out"})
 })
 dot4.addEventListener("click", ()=>
 {   
@@ -132,6 +140,22 @@ dot4.addEventListener("click", ()=>
         dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
         
     }
+
+        gsap.from("#svg-main-title", {duration: 1, y:-30, ease:"elastic.out(1,0.8)"})
+        gsap.from("#svg-title", {duration: 1, y:30, ease:"power3.out"})
+        gsap.from("#svg-footer-title", {duration: 1, y:-30, ease:"power3.out"})
+        gsap.from("#g-1", {
+            opacity: 0, 
+            y: 100, 
+            duration: 1
+          });
+        gsap.from("#g-2", {
+            opacity: 0, 
+            y: 100, 
+            duration: 1
+          });
+          gsap.from("#left-content-title", {duration: 1, y:30, ease:"power3.out"})
+        gsap.from("#left-content-subtitle", {duration: 1, y:-30, ease:"power3.out"})
    
 })
 dot5.addEventListener("click", ()=>
@@ -158,6 +182,37 @@ dot5.addEventListener("click", ()=>
         
     }
     
+        gsap.from("#svg-main-title", {duration: 1, y:-30, ease:"elastic.out(1,0.8)"})
+        gsap.from("#svg-title", {duration: 1, y:30, ease:"power3.out"})
+        gsap.from("#svg-footer-title", {duration: 1, y:-30, ease:"power3.out"})
+        gsap.from("#b-1", {
+            opacity: 0, 
+            y: 100, 
+            duration: 0.25
+          });
+        gsap.from("#b-2", {
+            opacity: 0, 
+            y: 100, 
+            duration: 0.25
+          });
+        gsap.from("#b-3", {
+            opacity: 0, 
+            x: 100, 
+            duration: 0.25
+          });
+        gsap.from("#b-4", {
+            opacity: 0, 
+            y: 100, 
+            duration: 0.25
+          });
+        gsap.from("#b-5", {
+            opacity: 0, 
+            y: 100, 
+            duration: 0.25
+          });
+          gsap.from("#left-content-title", {duration: 1, y:30, ease:"power3.out"})
+        gsap.from("#left-content-subtitle", {duration: 1, y:-30, ease:"power3.out"})
+
 })
 dot6.addEventListener("click", ()=>
 {   
@@ -180,6 +235,39 @@ dot6.addEventListener("click", ()=>
             dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
             
         }
+
+        gsap.from("#svg-main-title", {duration: 1, y:-30, ease:"elastic.out(1,0.8)"})
+        gsap.from("#svg-title", {duration: 1, y:30, ease:"power3.out"})
+        gsap.from("#svg-footer-title", {duration: 1, y:-30, ease:"power3.out"})
+        gsap.from("#page-six-firstpic", {
+            opacity: 0, 
+            x: -100, 
+            duration: 1
+          });
+          gsap.from("#page-six-secondpic", {
+            opacity: 0, 
+            y: -100, 
+            duration: 1
+          });
+          gsap.from("#page-six-thirdpic", {
+            opacity: 0, 
+            y: 100, 
+            duration: 1
+          });
+          gsap.from("#page-six-fourthpic", {
+            opacity: 0, 
+            y: 100,
+         
+            duration: 1
+          });
+          gsap.from("#page-six-fifthpic", {
+            opacity: 0, 
+            y: 100, 
+            x:100,
+            duration: 1
+          });
+          gsap.from("#left-content-title", {duration: 1, y:30, ease:"power3.out"})
+        gsap.from("#left-content-subtitle", {duration: 1, y:-30, ease:"power3.out"})
         
 })
 dot7.addEventListener("click", ()=>
@@ -204,7 +292,88 @@ dot7.addEventListener("click", ()=>
         dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
         
     }
+
+        gsap.from("#svg-main-title", {duration: 1, y:-30, ease:"elastic.out(1,0.8)"})
+        gsap.from("#svg-sub-title", {duration: 1, y:30, ease:"power3.out"})
+        gsap.from("#svg-footer-title", {duration: 1, y:-30, ease:"power3.out"})
+        gsap.from("#left-content-title", {duration: 1, y:30, ease:"power3.out"})
+        gsap.from("#left-content-subtitle", {duration: 1, y:-30, ease:"power3.out"})
+        gsap.from("#o1", {
+            opacity: 0, 
+            y: -100, 
+            duration: 1
+          });
+        gsap.from("#o2", {
+            opacity: 0, 
+            y: 100, 
+            duration: 1
+          });
+    
 })
 
 
-// gsap.from('#svg-content', {duration: 1, rotation: 360})
+
+
+// scrollmagic
+
+
+
+// var t1 = new TimelineMax();
+// t1.from(
+//     "section#page2",
+//     1,
+    
+//     // {xPercent: 100},
+//     {xPercent: 100, ease: Linear.easeNone,immediateRender: true}
+// );
+
+// tl.fromTo(
+//     "section#page3",
+//     1,
+//     { yPercent: 100 },
+//     { yPercent: 0, ease: Linear.easeNone },
+//     "+=1",
+    
+//   );
+
+//   var controller = new ScrollMagic.Controller();
+
+//   new ScrollMagic.Scene({
+
+//     triggerElement: "#main-section",
+//     triggerHook: "onLeave",
+//     duration: "100%"
+// })
+
+// .setPin("#main-section")
+// .setTween(t1)
+// .addIndicators({
+//     colorTrigger: "green",
+//     colorStart: "black",
+//     colorEnd: "orange",
+//     indent: 40
+// })
+
+// .addTo(controller);
+
+document.addEventListener("DOMContentLoaded",()=>
+{
+    var controller = new ScrollMagic.Controller({
+        globalSceneOptions:
+        {
+            triggerHook: "onLeave",
+            duration: "100%"
+        }
+    });
+
+    var sections = document.querySelectorAll("section.panel");
+    for(var i=0; i<sections.length; i++)
+    {
+        new ScrollMagic.Scene({
+            triggerElement: sections[i]
+        })
+        .setPin(sections[i], {pushFollowers: true})
+        .addIndicators()
+        .addTo(controller)
+    }
+});

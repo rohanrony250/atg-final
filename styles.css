@@ -120,24 +120,38 @@ p {
   top: 42rem;
   left: 450px;
   color: white;
+  animation: zooom-in 2s ease-in-out;
 }
 
 #coming-soon {
   position: absolute;
   top: 40rem;
   color: #bbbbbb;
+  animation: zooom-in 2s ease-in-out;
+}
+
+@keyframes zooom-in
+{
+  0%
+  {
+    transform: scale(0.5);
+  }
+  100%
+  {
+    transform: scale(1.0);
+  }
 }
 
 #img1 {
   position: absolute;
   right: 0;
-  top: -130px;
+  top: -110px;
 }
 
 #img2 {
   position: absolute;
-  left: 150px;
-  top: 450px;
+  left: 170px;
+  top: 230px;
 }
 
 #img {
@@ -278,7 +292,7 @@ p {
   top: 400px;
   left: 140px;
 }
-#page2,
+/* #page2,
 #page3,
 #page4,
 #page5,
@@ -286,7 +300,7 @@ p {
 #page6,
 #page7 {
   display: none;
-}
+} */
 
 .active {
   fill: rgb(0, 146, 255) !important;
