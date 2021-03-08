@@ -31,39 +31,54 @@
 }
 
 #svg-circle {
-  background-color: #3d5af1;
+  height: 350px;
+  width: 350px;
+  border: none;
+  border-radius: 500px;
+  position: fixed;
+  top: 60px;
+  left: 28.5%;
+  z-index: 3;
+}
+
+#svg-content {
   height: 350px;
   width: 350px;
   border: none;
   border-radius: 500px;
   position: absolute;
-  top: 50px;
-  left: 30%;
-  z-index: 1;
-}
-
-/* #svg-main-title
-{
-  z-index: 8;
-}
-
-#svg-title
-{
-  z-index: 1;
-} */
-
-#svg-content {
-  position: absolute;
-  top: 11rem;
-  left: 20rem;
-  z-index: 2;
+  top: 60px;
+  left: 22rem;
   color: white;
+  z-index: 1;
 }
 
-.page-three-svg-content {
+.svg-content-color1 {
+  background-color: #3d5af1;
+}
+.svg-content-color2 {
+  background-color: #153e90;
+}
+.svg-content-color3 {
+  background-color: #3e044d;
+}
+.svg-content-color4 {
+  background-color: #2e7447;
+}
+.svg-content-color5 {
+  background-color: #1f45fc;
+}
+.svg-content-color6 {
+  background-color: #1a2639;
+}
+.svg-content-color7 {
+  background-color: #00003f;
+}
+
+.svg-inner-content {
+  margin-top: 7rem !important;
   position: absolute;
-  top: 9rem !important;
-  
+  left: -30px;
 }
 #svg-content1 {
   position: absolute;
@@ -91,6 +106,7 @@ p {
 
 .font-size1 {
   font-size: 20px !important;
+  z-index: 2;
 }
 
 #svg {
@@ -120,38 +136,36 @@ p {
   top: 42rem;
   left: 450px;
   color: white;
-  animation: zooom-in 2s ease-in-out;
 }
 
 #coming-soon {
   position: absolute;
   top: 40rem;
   color: #bbbbbb;
-  animation: zooom-in 2s ease-in-out;
+  animation: 1s coming-soon ease-in;
 }
 
-@keyframes zooom-in
-{
-  0%
-  {
+@keyframes coming-soon {
+  0% {
     transform: scale(0.5);
+    -webkit-transform: scale(0.5);
   }
-  100%
-  {
-    transform: scale(1.0);
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
   }
 }
 
 #img1 {
   position: absolute;
   right: 0;
-  top: -110px;
+  top: -130px;
 }
 
 #img2 {
   position: absolute;
-  left: 170px;
-  top: 230px;
+  left: 150px;
+  top: 450px;
 }
 
 #img {
@@ -171,6 +185,14 @@ p {
   position: relative;
 }
 
+.page-3-svg-content {
+  position: absolute;
+  top: 9.5rem !important;
+  left: 22rem;
+  z-index: 2;
+  color: white;
+}
+
 .color1 {
   background-color: #071a52;
 }
@@ -179,7 +201,7 @@ p {
 }
 
 .furn-img {
-  background: url("./resources//furn-img.png");
+  background: url("./resources/furn-img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -292,15 +314,15 @@ p {
   top: 400px;
   left: 140px;
 }
-/* #page2,
+#page2,
 #page3,
 #page4,
 #page5,
 #page5,
 #page6,
 #page7 {
-  display: none;
-} */
+  display: block;
+}
 
 .active {
   fill: rgb(0, 146, 255) !important;
