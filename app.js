@@ -1,4 +1,5 @@
 const dot1=document.getElementById('Dots');
+
 const dot2=document.getElementById('Dots1');
 const dot3=document.getElementById('Dots2');
 const dot4=document.getElementById('Dots3');
@@ -20,53 +21,41 @@ const svgring = document.getElementById('Opaque_Ring')
 
 const dotarray  = [dot1,dot2,dot3,dot4,dot5,dot6,dot7];
 
-const rollup = document.getElementById('svg-content69');
 
 $(document).ready(function() {
-    $.scrollify({
-      section: "section",
-      sectionName: "section-name",
-      interstitialSection: "",
-      easing: "easeOutExpo",
-      scrollSpeed: 150,
-      offset: 0,
-      scrollbars: true,
-      standardScrollElements: "",
-      setHeights: true,
-      overflowScroll: false,
-      updateHash: true,
-      touchScroll: true,
-      before: function() {},
-      after: function() {ContentAnimation()},
-      afterResize: function() {},
-      afterRender: function() {}
-    });
-    $(function() {
-      $.scrollify({
-        section: ".scroll",
-      });
-    });
-  });
-function ContentAnimation()
-{
-    gsap.from(".h1", {
+  $.scrollify({
+    section: "section",
+    sectionName: "section-name",
+    interstitialSection: "",
+    easing: "easeOutExpo",
+    scrollSpeed: 200,
+    offset: 0,
+    scrollbars: true,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll: true,
+    before: function() {},
+    after: function() {
+      gsap.from(".h1", {
         opacity: 0, 
         y: 30, 
-        duration: 1.2,
+        duration: 1,
         ease: 'power3.out'
       });
       gsap.from(".run", {
         opacity: 0, 
         y: -30, 
-        duration: 1.2,
+        duration: 1,
         ease: 'power3.out'
       });
-    gsap.from("#img1", {duration: 1, y:"-100%"})
-    gsap.from("#img2", {duration: 1, y:"100%"})
-    gsap.from(".right-section", {duration:1, y: "100%"})
-    gsap.from("#page-three-firstpic", {duration: 1, y:"100%"})
-    gsap.from("#page-three-secondpic", {duration: 1, y:"-100%"})
-    gsap.from("#g-1", {
+      gsap.from("#img1", {duration: 1, y:"-100%"});
+      gsap.from("#img2", {duration: 1, y:"100%"});
+      gsap.from(".right-section", {duration:1, y: "30%"});
+      gsap.from("#page-three-firstpic", {duration: 1, y:"100%"});
+      gsap.from("#page-three-secondpic", {duration: 1, y:"-100%"});
+      gsap.from("#g-1", {
         opacity: 0, 
         y: 100, 
         duration: 1
@@ -131,31 +120,36 @@ function ContentAnimation()
       gsap.from("#o1", {
         opacity: 0, 
         y: -100, 
-        duration: 0.7
+        duration: 1
       });
     gsap.from("#o2", {
         opacity: 0, 
         y: 100, 
-        duration: 0.7
+        duration: 1
       });
-}
-function animation1()
-{
-    svgring.style.strokeDasharray="0,1000"
-    for (var j= 6; j>0; j--)
-    {
-        dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
-        
-    }
-}
 
-function animation2()
-{
-    svgring.style.strokeDasharray="130,1000"
+    },
+    afterResize: function() {},
+    afterRender: function() {}
+  });
+  $(function() {
+    $.scrollify({
+      section: ".panel",
+    });
+  });
+});
 
-  
-    
-    for (var i= 0; i<=1; i++)
+
+function animation1(){
+  svgring.style.strokeDasharray="0,1000";
+  for (var j= 6; j>0; j--)
+  {
+      dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
+      
+  }
+}
+function animation2(){
+  for (var i= 0; i<=1; i++)
     {
         dotarray[i].firstElementChild.firstElementChild.style.fill='rgb(0, 146, 255)';
         
@@ -165,13 +159,11 @@ function animation2()
         dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
         
     }
+    svgring.style.strokeDasharray="130,1000";
 }
+function animation3(){
+  svgring.style.strokeDasharray="280,1000";
 
-function animation3()
-{
-    svgring.style.strokeDasharray="280,1000"
- 
-    
     for (var i= 0; i<=2; i++)
     {
         
@@ -183,14 +175,9 @@ function animation3()
         dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
         
     }
-   
 }
-
-function animation4()
-{
-    svgring.style.strokeDasharray="420,1000"
-
-    
+function animation4(){
+  svgring.style.strokeDasharray="420,1000";
     for (var i= 0; i<=3; i++)
     {
         
@@ -201,14 +188,9 @@ function animation4()
         dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
         
     }
-
 }
-
-function animation5()
-{
-    svgring.style.strokeDasharray="530,1000";
-    
-
+function animation5(){
+  svgring.style.strokeDasharray="530,1000";
     for (var i= 0; i<=4; i++)
     {
         
@@ -220,13 +202,8 @@ function animation5()
         
     }
 }
-
-function animation6()
-{
-    svgring.style.strokeDasharray="680,1000";
-   
-  
-
+function animation6(){
+  svgring.style.strokeDasharray="680,1000";
     for (var i= 0; i<=5; i++)
     {
         
@@ -238,13 +215,8 @@ function animation6()
         
     }
 }
-
-function animation7()
-{
-    svgring.style.strokeDasharray="820,1000";
-    
-
-   
+function animation7(){
+  svgring.style.strokeDasharray="820,1000";
     for (var i= 0; i<=6; i++)
     {
         
@@ -257,13 +229,6 @@ function animation7()
     }
 }
 
-dot1.addEventListener("click", animation1)
-dot2.addEventListener("click", animation2)
-dot3.addEventListener("click", animation3)
-dot4.addEventListener("click", animation4)
-dot5.addEventListener("click", animation5)
-dot6.addEventListener("click", animation6)
-dot7.addEventListener("click", animation7)
 
 window.addEventListener('scroll',(e)=>{
     e.preventDefault();
@@ -287,3 +252,13 @@ window.addEventListener('scroll',(e)=>{
       animation7();
     }
   })
+
+dot1.addEventListener("click",animation1)
+dot2.addEventListener("click",animation2)
+dot3.addEventListener("click",animation3)
+dot4.addEventListener("click",animation4)
+dot5.addEventListener("click",animation5)
+dot6.addEventListener("click",animation6)
+dot7.addEventListener("click",animation7)
+
+

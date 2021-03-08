@@ -200,6 +200,10 @@ p {
   background-color: #529f6d;
 }
 
+#mobile-section{
+  display:none;
+}
+
 .furn-img {
   background: url("./resources/furn-img.png");
   background-position: center;
@@ -396,4 +400,71 @@ p {
   position: absolute;
   right: -30px;
   bottom: -80px;
+}
+
+@media only screen and (max-width: 1224px) {
+  #main-section{
+    display: none;
+  }
+  #mobile-section{
+    display:block;
+    position: relative;
+  }
+  #mobile1{
+    position: absolute;
+    top: 40px;
+  }
+  #mobile2{
+
+  }
+  #mobile3{
+
+  }
+  #mobile4{
+
+  }
+  #mobile5{
+
+  }
+  #mobile6{
+
+  }
+  #mobile7{
+
+  }
+  #mobile8{
+
+  }
+  #mobile9{
+
+  }
+  #mobile10{
+
+  }
+  #mobile11{
+
+  }
+  #mobile12{
+
+  }
+  #mobile13{
+
+  }
+  #mobile14{
+
+  }
+  #mobile15{
+
+  }
+  #mobile16{
+
+  }
+  #mobile17{
+
+  }
+  #mobile18{
+
+  }
+
+
 }
